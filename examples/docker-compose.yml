@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  insync-app:
+    image: kkottikas/docker-insync
+    container_name: insync-app
+    environment:
+      - CONTAINER_NAME=insync-app
+
+      - INSYNC_USERNAME=user@gmail.com
+      - INSYNC_AUTH_CODE=4/0ARtssJoyaGC4Y9k........
+      - INSYNC_DOWNLOAD=MS_OFFICE
+      - INSYNC_CLOUD_PROVIDER=gd
+ 
+    volumes:
+      - ./data:/data
+    restart: always

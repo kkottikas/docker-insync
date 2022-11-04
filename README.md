@@ -97,7 +97,9 @@ Be sure to view the following repositories to understand all the customizable op
 | `INSYNC_DOWNLOAD`  | Primary How to download files `LINK` (.gdoc), `MS_OFFICE` (.docx), `OPEN_DOCUMENT` (.odt)    | |
 | `INSYNC_CLOUD_PROVIDER`  | Primary Your cloud provider Google Drive (gd) / OneDrive (od) / Dropbox (dx). Note: only (gd) is tested but the rest should also work.        |   |
 
-Authorization Code provided by Google can be claimed [here](https://www.insynchq.com/auth). A license shall be bought from  [insync](https://insynchq.org) before the acquisition of the authorization code.
+Authorization Code provided by Google can be claimed [here](https://www.insynchq.com/auth?cloud=gd). A license shall be bought from  [insync](https://insynchq.com) before the acquisition of the authorization code.
+
+Authorization Code provided by OneDrive can be claimed [here](https://www.insynchq.com/auth?cloud=od).
 
 ### Networking
 
@@ -123,8 +125,8 @@ For debugging and maintenance purposes you may want access the containers shell.
 ```bash
 docker exec -it (whatever your container name is) bash
 ```
+Insync 3 Headless full list of commands: [Insync 3 Headless: Getting started](https://help.insynchq.com/en/articles/4257855-insync-3-headless-getting-started).
 
-Manual Backups can be perforemd by entering the container and typing `backup-now`
 ## Contributions
 Welcomed. Please fork the repository and submit a [pull request](../../pulls) for any bug fixes, features or additions you propose to be included in the image. If it does not impact my intended usage case, it will be merged into the tree, tagged as a release and credit to the contributor in the [CHANGELOG](CHANGELOG).
 
@@ -134,6 +136,6 @@ MIT. See [LICENSE](LICENSE) for more details.
 
 ## References
 
-* https://insync.org
+* https://insync.com
 
 

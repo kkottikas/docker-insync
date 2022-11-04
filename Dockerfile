@@ -10,7 +10,7 @@ ENV LANG='C.UTF-8' \
 
     ### Install required packages
 RUN apt-get update && \
-	apt-get install -y curl gnupg dialog cron apt-utils
+	apt-get install -y curl gnupg dialog cron apt-utils cron lsb-release
 	
     ### Install Insync
 RUN	curl -O https://cdn.insynchq.com/builds/linux/insync-headless_3.2.6.10745-buster_amd64.deb && \
